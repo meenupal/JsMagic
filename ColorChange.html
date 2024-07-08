@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            /* background-color: yellowgreen; */
+        }
+        .c1{
+            background-color: yellowgreen;
+            color: brown;
+        }
+        .c2{
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container c1" id="container">
+        <h1>This is JavaScript Manipulation</h1>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam beatae nemo tempora porro aut debitis maxime esse eaque et modi.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consectetur.</p>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi veniam, enim consequuntur magnam repellat!</p>
+
+    </div>
+    <button onclick="f1(event)">Click Me</button>
+
+    <script>
+        let isColor = true;
+        function f1(event){
+            event.preventDefault();
+            
+            let x = document.getElementById('container');
+            // console.log(x);
+            // x.className = isColor ? "container c2" : "container c1";
+            // x.style.backgroundColor = "orange";
+            isColor = !isColor;
+        }
+    </script>
+</body>
+</html>
